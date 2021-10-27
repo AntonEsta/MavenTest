@@ -8,7 +8,15 @@
     <name>sampleapp</name>
     <url></url>
     <description> The app for Maven practice. </description>
-  
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub</name>
+            <url>https://maven.pkg.github.com/AntonEsta/</url>
+        </repository>
+    </distributionManagement>
+    
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -41,6 +49,8 @@
                 </configuration>
             </plugin>
         
+
+            
         </plugins>
     </build>
   
